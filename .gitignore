@@ -1,21 +1,25 @@
 
-# Created by .ignore support plugin (hsz.mobi)  
-  
-.gradle  
-/local.properties  
-/.idea/workspace.xml  
-/.idea/libraries  
-.DS_Store  
-/build  
-/captures  
-  
+##ignore this file##
+/target/ 
+.settings      
+
+# Android Studio
+*.iml
+.idea/
+gradle/
+
 # Built application files  
 *.apk  
 *.ap_  
   
 # Files for the Dalvik VM  
 *.dex  
-  
+
+
+# Eclipse project files
+.classpath
+.project
+
 # Java class files  
 *.class  
   
@@ -37,7 +41,7 @@ proguard/
 *.log  
   
 # Others  
-.idea/  
-*.iml  
+.git/ 
 /build  
 *.iml  
+
