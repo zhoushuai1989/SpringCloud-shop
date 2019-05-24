@@ -29,11 +29,11 @@
 			<artifactId>wangcai-shop-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-<!-- 		<dependency>
+ 		<dependency>
 			<groupId>com.sdk4j</groupId>
 			<artifactId>sdk4j</artifactId>
 			<version>1.0</version>
-		</dependency> -->
-	
+		</dependency>
+
 	</dependencies>
 </project>

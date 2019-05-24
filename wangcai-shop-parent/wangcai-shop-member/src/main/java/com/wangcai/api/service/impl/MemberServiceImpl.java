@@ -21,6 +21,8 @@ import com.wangcai.utils.TokenUtils;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Date;
+
 @Slf4j
 @RestController
 public class MemberServiceImpl extends BaseApiService implements MemberService {
@@ -49,6 +51,8 @@ public class MemberServiceImpl extends BaseApiService implements MemberService {
 		}
 		String newPassword = MD5Util.MD5(password);
 		user.setPassword(newPassword);
+		user.setCreated(new Date());
+		user.setUpdated(new Date());
 		Integer result = memberDao.insertUser(user);
 		if (result <= 0) {
 			return setResultError("注册用户信息失败.");
